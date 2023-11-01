@@ -1,21 +1,14 @@
+#include <stdarg.h>
 #ifndef HEADER
 #define HEADER
 
-union types 
-{
-    void (*str)(char *);
-    void (*chr)(char);
-};
 
 typedef struct formats {
-    union types func_pointer;
-    char format;
+    void (*print)(va_list);
+    char spec;
 } formats_t;
 
 int _printf(const char *, ...);
-
-void print_str(char *);
-void print_char(char);
 
 
 #endif
