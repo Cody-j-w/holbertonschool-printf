@@ -6,7 +6,7 @@ void (*get_format(char specifier))(va_list)
 {
 
 	int i = 0;
-	format_t formats[] = {
+	formats_t formats[] = {
 		{'s', print_string},
 		{'c', print_char},
 		{'d', print_digit},
