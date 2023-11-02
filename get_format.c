@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-void (*get_format(char specifier))(va_list)
+int (*get_format(char specifier))(va_list)
 {
 
 	int i = 0;
