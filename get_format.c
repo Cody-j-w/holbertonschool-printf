@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-void (*get_format(char specifier))(va_list)
+int (*get_format(char specifier))(va_list)
 {
 
 	int i = 0;
@@ -11,10 +11,10 @@ void (*get_format(char specifier))(va_list)
 		{'c', print_char},
 		{'d', print_digit},
 		{'i', print_digit},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 
-	while (formats[i].spec != NULL)
+	while (formats[i].spec != '\0')
 	{
 		if (specifier == formats[i].spec)
 		{
