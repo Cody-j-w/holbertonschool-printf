@@ -20,7 +20,7 @@ void print_string(va_list args)
 
 void print_char(va_list args)
 {
-	char ch = va_arg(args, char);
+	char ch = va_arg(args, int);
 	putchar(ch);
 }
 
