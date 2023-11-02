@@ -4,7 +4,7 @@
 
 
 typedef struct formats {
-    void (*print_func)(va_list);
+    int (*print_func)(va_list);
     char spec;
 } formats_t;
 
