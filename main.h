@@ -4,8 +4,8 @@
 
 
 typedef struct formats {
-    int (*print_func)(va_list);
     char spec;
+    int (*print_func)(va_list);
 } formats_t;
 
 int _printf(const char *, ...);
