@@ -4,9 +4,9 @@
 /**
  * print_string - prints a string
  * @args: arguments to format data type
- * Return: void
+ * Return: Number of characters printed (null byte excluded)
  */
-void print_string(va_list args)
+int print_string(va_list args)
 {
 	char *str = va_arg(args, char*);
 	puts(str);
@@ -15,10 +15,10 @@ void print_string(va_list args)
 /**
  * print_char - prints a character
  * @args: arguments to format data type
- * Return: void
+ * Return: Number of characters printed (should be 1)
  */
 
-void print_char(va_list args)
+int print_char(va_list args)
 {
 	char ch = va_arg(args, int);
 	putchar(ch);
@@ -27,10 +27,10 @@ void print_char(va_list args)
 /**
  * print_digit - prints an integer
  * @args: arguments to format data type
- * Return: void
+ * Return: Number of characters printed (should be 1)
  */
 
-void print_digit(va_list args)
+int print_digit(va_list args)
 {
 	int digit = va_arg(args, int);
 	putchar('0' + digit);
