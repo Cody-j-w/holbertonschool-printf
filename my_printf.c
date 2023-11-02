@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
             format++;
             (*get_format(*format))(args);
         }
-
+        format++;
     }
     return (0);
 }
