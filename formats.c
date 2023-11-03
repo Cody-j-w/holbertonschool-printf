@@ -70,3 +70,16 @@ int print_nothing(__attribute__((unused)) va_list args)
 {
 	return (0);
 }
+
+/**
+ * catch_all - prints a percent sign and a character for edge cases
+ * @c: the character to print
+ * 
+ * Return: 2 - the length of "%c"
+*/
+int catch_all(char c)
+{
+	putchar('%');
+	putchar(c);
+	return (2);
+}
