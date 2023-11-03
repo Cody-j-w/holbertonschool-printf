@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 					else
 						count += func;
 				}
-				
+
 			}
 			else
 			{
