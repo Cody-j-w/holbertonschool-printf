@@ -1,21 +1,32 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdarg.h>
 
 int _printf(const char *format, ...)
 {
-    va_list args;
+	int count = 0;
+	int (*print_func)(va_list);
+	va_list args;
+	va_start(args, format);
 
-    va_start(args, format);
-
-    while (*format != '\0')
-    {
-        if (*format == '%')
-        {
-            format++;
-            (*get_format(*format))(args);
-        }
-        format++;
-    }
-    return (0);
+	while (*format != '\0')
+	{
+		if (*format == '%')
+		{
+			format++;
+			print_func = get_format(*format);
+			if (print_func != NULL)
+			{
+				count += print_func(args);
+			}
+		}
+		else
+		{
+			putchar(*format);
+			count++;
+		}
+		format++;
+	}
+	va_end(args);
+	return (count);
 }
