@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int (*get_format(char specifier))(va_list)
 {
@@ -11,10 +12,14 @@ int (*get_format(char specifier))(va_list)
 		{'c', print_char},
 		{'d', print_digit},
 		{'i', print_digit},
-		{'\0', NULL}
+		{'%', print_mod},
+		{'\0', print_nothing}
 	};
+	int (*catch_case)(char specifier);
+	catch_case = catch_all;
 
-	while (formats[i].spec != '\0')
+
+	while (i < 6)
 	{
 		if (specifier == formats[i].spec)
 		{
@@ -23,4 +28,8 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
+	putchar('%');
+	putchar(specifier);
+	return (catch_case);
+
 }
