@@ -68,7 +68,7 @@ int print_mod(__attribute__((unused)) va_list args)
 
 int print_nothing(__attribute__((unused)) va_list args)
 {
-	return (0);
+	return (-1);
 }
 
 /**
