@@ -51,7 +51,7 @@ int print_digit(va_list args)
  * @args: 
 */
 
-int print_mod(__attrbute__((unused)) va_lost args)
+int print_mod(__attribute__((unused)) va_lost args)
 {
 	putchar('%');
 	return (1);
