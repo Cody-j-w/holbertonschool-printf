@@ -14,7 +14,7 @@ int print_string(va_list args)
 		return (-1);
 	}
 	fputs(str, stdout);
-	return (0);
+	return (strlen(str));
 }
 
 /**
@@ -27,7 +27,7 @@ int print_char(va_list args)
 {
 	char ch = va_arg(args, int);
 	putchar(ch);
-	return (0);
+	return (1);
 }
 
 /**
@@ -40,6 +40,6 @@ int print_digit(va_list args)
 {
 	int digit = va_arg(args, int);
 	putint(digit);
-	return (0);
+	return (4);
 
 }
