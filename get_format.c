@@ -13,10 +13,9 @@ int (*get_format(char specifier))(va_list)
 		{'d', print_digit},
 		{'i', print_digit},
 		{'%', print_mod},
-		{'\0', print_nothing}
+		{'\0', print_nothing},
+		{'~', catch_all}
 	};
-	int (*catch_case)(char specifier);
-	catch_case = catch_all;
 
 	while (i < 6)
 	{
