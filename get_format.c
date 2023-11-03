@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 int (*get_format(char specifier))(va_list)
 {
@@ -26,6 +27,6 @@ int (*get_format(char specifier))(va_list)
 	}
 	putchar('%');
 	putchar(specifier);
-	return (2);
+	return (NULL);
 
 }
