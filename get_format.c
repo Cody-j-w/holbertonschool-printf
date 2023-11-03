@@ -11,7 +11,8 @@ int (*get_format(char specifier))(va_list)
 		{'c', print_char},
 		{'d', print_digit},
 		{'i', print_digit},
-		{'\0', NULL}
+        {'%', print_mod},
+		{'\0', print_mod}
 	};
 
 	while (formats[i].spec != '\0')
@@ -23,5 +24,5 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
-    return (NULL);
+    return (0);
 }
