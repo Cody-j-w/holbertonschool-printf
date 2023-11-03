@@ -13,6 +13,7 @@ int (*get_format(char))(va_list);
 int print_char(va_list);
 int print_string(va_list);
 int print_digit(va_list);
+int print_mod(va_list);
 int _putchar(char);
 int putint(int);
 
