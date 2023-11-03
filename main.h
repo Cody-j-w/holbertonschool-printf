@@ -4,12 +4,15 @@
 
 
 typedef struct formats {
-    void (*print())(va_list);
     char spec;
+    int (*print_func)(va_list);
 } formats_t;
 
 int _printf(const char *, ...);
-void (*get_format(char))(va_list);
+int (*get_format(char))(va_list);
+int print_char(va_list);
+int print_string(va_list);
+int print_digit(va_list);
 
 
 #endif
