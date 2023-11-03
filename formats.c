@@ -39,6 +39,7 @@ int print_char(va_list args)
 int print_digit(va_list args)
 {
 	int digit = va_arg(args, int);
-	putchar('0' + digit);
+	putint(digit);
 	return (0);
+
 }
