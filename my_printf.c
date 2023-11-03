@@ -6,6 +6,7 @@ int _printf(const char *format, ...)
 {
 	int count = 0;
 	int (*print_func)(va_list);
+	int func;
 	va_list args;
 
 	if (format)
