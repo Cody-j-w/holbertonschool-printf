@@ -18,7 +18,6 @@ int (*get_format(char specifier))(va_list)
 	int (*catch_case)(char specifier);
 	catch_case = catch_all;
 
-
 	while (i < 6)
 	{
 		if (specifier == formats[i].spec)
@@ -29,5 +28,4 @@ int (*get_format(char specifier))(va_list)
 		i++;
 	}
 	return (catch_case);
-
 }
