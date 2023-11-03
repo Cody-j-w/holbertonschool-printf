@@ -16,12 +16,12 @@ int _putchar(char c)
 /**
  * putint - writes the integer i to stdout
  * @i: the integer to print
- * 
+ *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
 */
 int putint(int i)
 {
-    return (write(1, &i, 4));
+	return (write(1, &i, 4));
 }
 
