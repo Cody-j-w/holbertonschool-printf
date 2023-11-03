@@ -15,6 +15,8 @@ int (*get_format(char specifier))(va_list)
 		{'%', print_mod},
 		{'\0', print_nothing}
 	};
+	int (*catch_case)(char specifier);
+	catch_case = catch_all;
 
 	while (i < 6)
 	{
@@ -25,8 +27,5 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
-	putchar('%');
-	putchar(specifier);
-	return (NULL);
-
+	return (catch_case);
 }
