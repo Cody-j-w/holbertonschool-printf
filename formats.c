@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+
 /**
  * print_string - prints a string
  * @args: arguments to format data type
@@ -43,4 +44,15 @@ int print_digit(va_list args)
 	putint(digit);
 	return (4);
 
+}
+
+/**
+ * print_mod - prints a percent sign in the case of a double-%
+ * @args: 
+*/
+
+int print_mod(__attrbute__((unused)) va_lost args)
+{
+	putchar('%');
+	return (1);
 }
