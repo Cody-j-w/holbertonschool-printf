@@ -9,7 +9,12 @@
 int print_string(va_list args)
 {
 	char *str = va_arg(args, char*);
-	puts(str);
+	if (str == NULL)
+	{
+		return (-1);
+	}
+	fputs(str, stdout);
+	return (0);
 }
 
 /**
@@ -22,6 +27,7 @@ int print_char(va_list args)
 {
 	char ch = va_arg(args, int);
 	putchar(ch);
+	return (0);
 }
 
 /**
@@ -34,4 +40,5 @@ int print_digit(va_list args)
 {
 	int digit = va_arg(args, int);
 	putchar('0' + digit);
+	return (0);
 }
