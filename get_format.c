@@ -11,11 +11,11 @@ int (*get_format(char specifier))(va_list)
 		{'c', print_char},
 		{'d', print_digit},
 		{'i', print_digit},
-        {'%', print_mod},
-		{'\0', print_mod}
+		{'%', print_mod},
+		{'\0', print_nothing}
 	};
 
-	while (formats[i].spec != '\0')
+	while (i < 6)
 	{
 		if (specifier == formats[i].spec)
 		{
@@ -24,5 +24,8 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
-    return (0);
+	putchar('%');
+	putchar(specifier);
+	return (2);
+
 }
