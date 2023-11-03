@@ -73,13 +73,11 @@ int print_nothing(__attribute__((unused)) va_list args)
 
 /**
  * catch_all - prints a percent sign and a character for edge cases
- * @c: the character to print
+ * @args: the va_list that printf has accepted. Does nothing here
  * 
  * Return: 2 - the length of "%c"
 */
-int catch_all(char c)
+int catch_all(__attribute__((unused)) va_list args)
 {
-	putchar('%');
-	putchar(c);
 	return (2);
 }
