@@ -28,5 +28,5 @@ int (*get_format(char specifier))(va_list)
 	}
 	putchar('%');
 	putchar(specifier);
-	return (catch_case);
+	return (formats[i].print_func);
 }
