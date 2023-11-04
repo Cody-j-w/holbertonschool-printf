@@ -4,35 +4,6 @@
 #include <string.h>
 
 /**
- * print_string - prints a string
- * @args: arguments to format data type
- * Return: Number of characters printed (null byte excluded)
- */
-int print_string(va_list args)
-{
-	char *str = va_arg(args, char*);
-	if (str == NULL)
-	{
-		str = "(null)";
-	}
-	fputs(str, stdout);
-	return (strlen(str));
-}
-
-/**
- * print_char - prints a character
- * @args: arguments to format data type
- * Return: Number of characters printed (should be 1)
- */
-
-int print_char(va_list args)
-{
-	char ch = va_arg(args, int);
-	putchar(ch);
-	return (1);
-}
-
-/**
  * print_digit - prints an integer
  * @args: arguments to format data type
  * Return: Number of characters printed (should be 1)
