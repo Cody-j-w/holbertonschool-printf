@@ -9,7 +9,6 @@
  *
  * Return: Number of characters printed (should be 1)
 */
-
 int print_mod(__attribute__((unused)) va_list args)
 {
 	putchar('%');

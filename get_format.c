@@ -6,7 +6,7 @@
 /**
  * get_format - gets the appropriate function for the provided format character
  * @specifier: the provided format character
- * 
+ *
  * Return: a pointer to the appropriate function
 */
 
