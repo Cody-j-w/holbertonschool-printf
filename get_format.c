@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * get_format - gets the appropriate function for the provided format character
+ * @specifier: the provided format character
+ * 
+ * Return: a pointer to the appropriate function
+*/
+
 int (*get_format(char specifier))(va_list)
 {
 
