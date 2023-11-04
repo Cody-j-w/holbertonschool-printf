@@ -23,7 +23,7 @@ int print_digit(va_list args)
 	}
 	else
 	{
-		abs_calc = value;
+		abs_calc = -value;
 	}
 
 	abs_hold = abs_calc;
