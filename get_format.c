@@ -17,7 +17,7 @@ int (*get_format(char specifier))(va_list)
 		{'~', catch_all}
 	};
 
-	while (i < 6)
+	while (i < 7)
 	{
 		if (specifier == formats[i].spec)
 		{
@@ -28,5 +28,5 @@ int (*get_format(char specifier))(va_list)
 	}
 	putchar('%');
 	putchar(specifier);
-	return (formats[i].print_func);
+	return (NULL);
 }
