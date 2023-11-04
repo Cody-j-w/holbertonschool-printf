@@ -17,13 +17,14 @@ int print_digit(va_list args)
 
 	if (value < 0)
 	{
+		putchar('-');
 		count++;
 		abs_calc = value * -1;
 
 	}
 	else
 	{
-		abs_calc = value * -1; 
+		abs_calc = value; 
 	}
 
 	abs_hold = abs_calc;
