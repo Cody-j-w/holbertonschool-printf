@@ -6,7 +6,6 @@ int _printf(const char *format, ...)
 {
 	int count = 0;
 	int (*print_func)(va_list);
-	int func;
 	va_list args;
 
 	if (format)
@@ -20,17 +19,7 @@ int _printf(const char *format, ...)
 				print_func = get_format(*format);
 				if (print_func != NULL)
 				{
-					func = print_func(args);
-					if (func == -1)
-						return (-1);
-					else
-						count += func;
-				}
-				else 
-				{
-					putchar('%');
-					putchar(*format);
-					count += 2;
+					count += print_func(args);
 				}
 			}
 			else

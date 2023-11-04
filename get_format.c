@@ -28,5 +28,5 @@ int (*get_format(char specifier))(va_list)
 	}
 	putchar('%');
 	putchar(specifier);
-	return (NULL);
+	return (catch_all);
 }
