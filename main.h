@@ -1,9 +1,9 @@
-#include <stdarg.h>
 #ifndef HEADER
 #define HEADER
+#include <stdarg.h>
 
-
-typedef struct formats {
+typedef struct formats
+{
     char spec;
     int (*print_func)(va_list);
 } formats_t;

@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * _printf - prints a provided string in addition to a list of variadic args
+ * @format: the provided string with format specifiers
+ * 
+ * Return: the number of characters in the final string
+*/
+
 int _printf(const char *format, ...)
 {
 	int count = 0;
