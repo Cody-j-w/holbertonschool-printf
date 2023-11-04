@@ -26,7 +26,12 @@ int _printf(const char *format, ...)
 					else
 						count += func;
 				}
-
+				else 
+				{
+					putchar('%');
+					putchar(*format);
+					count += 2;
+				}
 			}
 			else
 			{
