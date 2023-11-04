@@ -5,7 +5,7 @@
 /**
  * _printf - prints a provided string in addition to a list of variadic args
  * @format: the provided string with format specifiers
- * 
+ *
  * Return: the number of characters in the final string
 */
 
@@ -30,8 +30,7 @@ int _printf(const char *format, ...)
 					func = print_func(args);
 					if (func == -1)
 						return (-1);
-					else
-						count += func;
+					count += func;
 				}
 			}
 			else
