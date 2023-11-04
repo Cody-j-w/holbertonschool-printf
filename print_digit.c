@@ -10,7 +10,7 @@
  */
 
 int print_digit(va_list args)
-{	
+{
 	int count = 0;
 	int abs_calc, abs_hold, track_dig;
 	int value = va_arg(args, int);
