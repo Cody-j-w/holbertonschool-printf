@@ -10,14 +10,14 @@
  */
 
 int print_digit(va_list args)
-{	
+{
 	int count = 0;
 	int abs_calc, abs_hold, track_dig;
 	int value = va_arg(args, int);
 
 	if (value < 0)
 	{
-		count += putchar('-');
+		count++;
 		abs_calc = value * -1;
 
 	}
@@ -36,7 +36,8 @@ int print_digit(va_list args)
 	}
 	while (track_dig >= 1)
 	{
-		count = count + putchar(((abs_calc / track_dig) % 10) + '0');
+		count++;
+		putchar(((abs_calc / track_dig) % 10) + '0');
 		track_dig = track_dig / 10;
 	}
 	return (count);
