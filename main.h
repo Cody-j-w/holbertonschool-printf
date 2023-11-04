@@ -15,7 +15,7 @@ int print_string(va_list);
 int print_digit(va_list);
 int print_mod(va_list);
 int print_nothing(va_list);
-int catch_all(char);
+int catch_all(va_list);
 int _putchar(char);
 int putint(int);
 

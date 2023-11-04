@@ -13,12 +13,11 @@ int (*get_format(char specifier))(va_list)
 		{'d', print_digit},
 		{'i', print_digit},
 		{'%', print_mod},
-		{'\0', print_nothing}
+		{'\0', print_nothing},
+		{'~', catch_all}
 	};
-	int (*catch_case)(char specifier);
-	catch_case = catch_all;
 
-	while (i < 6)
+	while (i < 7)
 	{
 		if (specifier == formats[i].spec)
 		{
@@ -27,5 +26,7 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
-	return (catch_case);
+	putchar('%');
+	putchar(specifier);
+	return (catch_all);
 }
