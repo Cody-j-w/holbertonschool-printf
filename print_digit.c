@@ -36,13 +36,16 @@ int print_digit(va_list args) {
 		track_dig = track_dig * 10;
 	}
 	while (track_dig >= 1) {
-		count++;
-		putchar(((abs_calc / track_dig) % 10) + '0');
-		track_dig = track_dig / 10;
-	}
-	if (value == INT_MIN) {
-		putchar('8');
-		count++;
+		if (value == INT_MIN && track_dig == 1)
+		{
+			putchar('8');
+			count++;
+		}
+		else{
+			count++;
+			putchar(((abs_calc / track_dig) % 10) + '0');
+			track_dig = track_dig / 10;
+		}
 	}
 	return (count);
 }
