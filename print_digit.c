@@ -40,6 +40,7 @@ int print_digit(va_list args) {
 		{
 			putchar('8');
 			count++;
+			track_dig = track_dig / 10;
 		}
 		else{
 			count++;
