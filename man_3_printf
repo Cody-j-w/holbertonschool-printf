@@ -29,21 +29,37 @@ asks for the next argument in the list.
 A character that specifies the type of conversion to be applied. The conversion
 specifiers and their meanings are:
 
-.IP d, i
+.B
+.IP "d, i"
 The int argument is converted to decimal notation.
-
+.B
 .IP c
 The int argument is converted to an unsigned char, and the resulting
 character is written.
-
+.B
 .IP s
 The const char * argument is xpected to be a pointer to an array of
 character type (that is, a pointer to a string). Characters from the array
 are written up to, but not including, a terminating null byte ('\0').
-
+.B
+.IP %
+A '%' is written. No aergument is converted. The complete conversion
+specification is '%%'.
 
 .SH RETURN VALUE
 If successful, _printf() returns the number of characters printed, excluding
 the null byte character used to end output.
 
 If an output error is encountered, a negative value is returned instead.
+
+.SH EXAMPLE
+To print a simple string ending with a newline:
+
+.IP #include "main.h"
+.IP _printf("%s/n", "Hello world!");
+
+.SH SEE ALSO
+printf(1), printf(3), puts(3), scanf(3)
+
+.SH AUTHORS
+Cody Walenciak and Savanna Davis
