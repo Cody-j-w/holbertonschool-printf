@@ -17,6 +17,28 @@
 - `%i`: <i>Format and print integers.</i>
 - `%d`: <i>Format and print decimal numbers.</i></details>
 
+<h3>Examples</h3>
+
+To print strings and characters:
+
+```c
+_printf("Print %c%s", 'a', "string");
+```
+
+To print integers and decimal numbers:
+
+```c
+_printf("%d%i", 1337, 9000);
+```
+
+<h3>Get Started</h3>
+
+In the user's terminal, in the subdirectory where the user would like to install the new repository, type:
+
+```bash
+git clone https://github.com/Cody-j-w/holbertonschool-printf.git
+```
+
 <h4>Below is our flowchart to outline the thought process we had, as well as how the code executes.</h4>
 
 ![Untitled Diagram drawio(4)](https://github.com/Cody-j-w/holbertonschool-printf/assets/125928278/1f1272a7-d1e9-492c-bec2-5de4fa446756)
