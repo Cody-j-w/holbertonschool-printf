@@ -17,8 +17,10 @@
 - `%i`: <i>Format and print integers.</i>
 - `%d`: <i>Format and print decimal numbers.</i></details>
 
-<p>Below is our flowchart to outline the thought process we had, as well as how the code executes.</p>
+<h4>Below is our flowchart to outline the thought process we had, as well as how the code executes.</h4>
 
-<p>For a detailed description of our project, check out the manual!</p>
+![Untitled Diagram drawio(4)](https://github.com/Cody-j-w/holbertonschool-printf/assets/125928278/1f1272a7-d1e9-492c-bec2-5de4fa446756)
+
+<h3 align="center">For a detailed description of our project, check out the manual!</h3>
 
 <h4 align="center">We had a <i>blast</i> making this! Thanks for taking the time to read about it!</h4>
