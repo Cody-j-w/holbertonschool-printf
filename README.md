@@ -1,4 +1,4 @@
-<h1 align="center"><b>holbertonschool-printf</b></h1>
+![header](https://capsule-render.vercel.app/api?type=rect&height=200&text=Holbertonschool-printf%20&fontAlign=50&stroke=00FF00&strokeWidth=3)
 
 <h2 align="center"><b>A Custom Implementation Of The printf Function</b></h2>
 
