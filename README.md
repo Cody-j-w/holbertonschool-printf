@@ -1,5 +1,5 @@
 <head>
-<body style="background-color:red;">
+<body style="background-color:red">
 
 <h1 align="center"><b>holbertonschool-printf</b></h1>
 
