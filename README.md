@@ -1,5 +1,3 @@
-<div style="background-color: red">
-
 <h1 align="center"><b>holbertonschool-printf</b></h1>
 
 <h2 align="center"><b>A Custom Implementation Of The printf Function</b></h2>
@@ -19,4 +17,8 @@
 - `%i`: <i>Format and print integers.</i>
 - `%d`: <i>Format and print decimal numbers.</i></details>
 
-</div>
+<p>Below is our flowchart to outline the thought process we had, as well as how the code executes.</p>
+
+<p>For a detailed description of our project, check out the manual!</p>
+
+<h4 align="center">We had a <i>blast</i> making this! Thanks for taking the time to read about it!</h4>
