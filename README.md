@@ -43,8 +43,8 @@ git clone https://github.com/Cody-j-w/holbertonschool-printf.git
 
 ![Untitled Diagram drawio(4)](https://github.com/Cody-j-w/holbertonschool-printf/assets/125928278/1f1272a7-d1e9-492c-bec2-5de4fa446756)
 
-<h3 align="center">For a detailed description of our project, check out the manual!</h3>
+<p align="center"><b>For a detailed description of our project, check out the manual!</b></p>
 
 
 
-<h4 align="center">We had a <i>blast</i> making this! Thanks for taking the time to read about it!</h4>
+<p align="center">We had a <i>blast</i> making this! Thanks for taking the time to read about it!</p>
