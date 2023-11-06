@@ -1,5 +1,4 @@
-<head>
-<body style="background-color:red">
+<div style="background-color:red">
 
 <h1 align="center"><b>holbertonschool-printf</b></h1>
 
@@ -20,5 +19,4 @@
 - `%i`: <i>Format and print integers.</i>
 - `%d`: <i>Format and print decimal numbers.</i></details>
 
-</body>
-</head>
+</div>
