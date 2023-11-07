@@ -39,7 +39,8 @@ int (*get_format(char specifier))(va_list)
 
 		i++;
 	}
-	/**if all other checks fail, then exit loop, print a '%' and the current
+	/**
+	 * if all other checks fail, then exit loop, print a '%' and the current
 	 * character, and return the catch_all function, which just returns 2.
 	*/
 	putchar('%');
