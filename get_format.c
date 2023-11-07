@@ -42,7 +42,7 @@ int (*get_format(char specifier))(va_list)
 	/**if all other checks fail, then exit loop, print a '%' and the current
 	 * character, and return the catch_all function, which just returns 2.
 	*/
-	putchar('%');
-	putchar(specifier);
+	_putchar('%');
+	_putchar(specifier);
 	return (catch_all);
 }
