@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 			if (*format == '%')		/*check for beginning of format specifier*/
 			{
 				format++;		/*increment once to point to the specifier*/
-				
+
 				print_func = get_format(*format); /*pass char to get_format*/
 				if (print_func != NULL) /*check if get_format was successful*/
 				{

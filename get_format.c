@@ -21,7 +21,7 @@ int (*get_format(char specifier))(va_list)
 	 * used ensure that it won't be accidentally hit.
 	*/
 	formats_t formats[] = {
-		{'s', print_string}, 
+		{'s', print_string},
 		{'c', print_char},
 		{'d', print_digit},
 		{'i', print_digit},
