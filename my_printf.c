@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				_putchar(*format); /*if no '% is found, print unaltered char'*/
+				putchar(*format); /*if no '% is found, print unaltered char'*/
 				count++; /*and increment char count*/
 			}
 			format++; /*proceed to the next char in the string*/
