@@ -48,3 +48,6 @@ git clone https://github.com/Cody-j-w/holbertonschool-printf.git
 
 
 <p align="center">We had a <i>blast</i> making this! Thanks for taking the time to read about it!</p>
+### Contributors
+[Cody Walenciak](https://www.linkedin.com/in/cody-walenciak/)
+[Savanna Davis](https://www.linkedin.com/in/savanna-davis1/)
